@@ -1,0 +1,207 @@
+body{
+    /* background-color: tan; */
+    background-image: url("photo/img\ 3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1000px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:darkcyan ;
+    height: 44px;
+    position: relative;
+    /* position: sticky; */
+    top: 0px;
+}
+header .peraent {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80%;
+    text-align: center;
+}
+header .menu i{
+    background-color: rgb(13, 98, 236);
+  
+    border-radius: 10px;
+    
+
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  
+    color: white;
+ 
+}
+.img {
+position: relative;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+height: 200px;
+padding: 10px;
+flex-wrap: wrap;
+
+}
+.img .im1{
+    border-radius: 100%;
+    position: absolute;
+    height:200px;
+    left: 40px;
+    /* top: 20px; */
+    width: 200px;
+   
+}
+.img .im2{
+    border-radius: 100%;
+    position: absolute;
+    height:200px;
+    left: 10px;
+    /* top: 20px; */
+    width: 200px;
+}
+header .peraent div a{
+    color: white;
+    display: inline-block;
+}
+header .peraent div a:hover{
+    text-decoration: none;
+    background-color: rgb(167, 242, 16);
+   
+    transform: translate(5px , 5px) scale(1.1);
+    transition: 1s;
+
+}
+.img{
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+.img .lan {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(233, 228, 228); */
+    height: 100%;
+    margin-right: 50px;
+    position: absolute;
+    right: 0px;
+}
+.img .lan ul li{
+    list-style: none;
+    color: rgb(238, 245, 241);
+
+}
+.img>h3{
+    color: black;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    /* background-color: rgb(8, 87, 244); */
+    height: fit-content;
+    padding: 5px;
+    margin-bottom: 80px;
+}
+.img>.con{
+    color: white;
+    border: 0px solid;
+    display: block;
+    justify-content: center;
+    width: 400px;
+    font-size: 20px;
+    word-spacing: 4px;
+    position: absolute;
+    bottom: 4px;
+    /* background-color: blue; */
+    margin-left: 40px;
+    padding: 10px;
+}
+.img .lan div h3{
+    color: rgb(14, 14, 14);
+    text-align: center;
+}
+.img .lan .first{
+    /* background-color: blueviolet; */
+    align-items: center;
+    margin-right: 30px;
+}
+.img .lan .first ul {
+  align-items: center;
+}
+.img .lan .sec {
+  align-items: center;
+ 
+}
+.phone{
+    position: fixed;
+    bottom: 10px ;
+    right: 20px;
+}
+#i{
+      /* size: 80px; */
+    background-color: rgb(12, 31, 236);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+  
+   border-radius: 20px;
+  
+    
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.main>div>div{
+    /* justify-content: space-around; */
+    text-align: center;
+    color: rgb(249, 246, 246);
+    font-size: 20px;
+     /* background-color: rgb(167, 214, 238); */
+     /* height: fit-content; */
+     padding-top: 10x;
+     /* margin-bottom: 10px; */
+     width:150px;
+}
+.main>div{
+    background-color: rgb(178, 213, 223);
+    width: 25%;
+    height: 250px;
+    border: 1px solid ;
+    /* align-content: center; */
+    text-align: center;
+     margin: 10px;
+   /* display: flex; */
+   justify-content: space-around;
+    padding-bottom: 10px;
+    padding-bottom: 0px;
+}
+.main .sec1{
+    text-align: center;
+    align-content: center;
+    color: brown;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 150px;
+}
+@media (max-width:600px){
+    body{
+        color: blue;
+    }
+}
+.topic:hover {
+    background-color: rgb(191, 131, 248);
+    opacity: 1;
+}
