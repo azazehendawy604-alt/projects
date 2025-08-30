@@ -1,0 +1,451 @@
+body{
+ height: 2500px;
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+       text-align: center;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 10;
+       border-top-right-radius: 5px;
+       border-bottom-left-radius: 5px;
+       color: white;
+       box-shadow: 2px 3px 3px rgb(244, 244, 248) , -1px -2px 4px red;
+}
+.nav{
+    position: relative;
+}
+.nav .power{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    width: 15px;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    animation: power 2s steps(20) infinite;
+}
+@keyframes power{
+    0%{
+        left: 110px;
+        background-color: rgb(5, 139, 248);
+    }
+    50%{
+        left:230px;
+        background-color: white;
+    }
+    100%{
+        left: 110px;
+        background-color: rgb(4, 250, 78);
+    }
+}
+.nav .bar{
+    display: flex;
+    gap: 50px;
+    margin-left: 130px;
+    margin-right: 20px;
+}
+.nav .bar li{
+    list-style: none;
+    color: white;
+    padding: 4px 5px;
+    border-radius: 5px;
+}
+#menue{
+    display: none;
+}
+.nav label{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    background-color: white;
+    color: black;
+    padding: 1px 5px;
+    border-radius: 10px;
+
+}
+.nav label span{
+    font-size: 17px;
+}
+.nav label i{
+    font-size: 20px;
+    margin-right: 7px;
+    background-color: white;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+.side{
+    position: absolute;
+    bottom: 70px;
+    left: -300px;
+    border-right: 1px solid blue;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 50px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+    border-left: 1px solid blue;
+    background-color: black;
+}
+.side{
+    position: relative;
+    height: 600px;
+         width: 12%;
+        color: white;
+        transition: .5s ease-in-out ;
+        box-shadow: 2px 0px 2px white;
+        z-index: 9;
+}
+.side .menue{
+    height: 100%;
+        gap: 40px;
+             display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        right: 0px;
+}
+.menue  label i{
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+  padding: 1px 3px;
+  border-radius: 100%;
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+.menue label{
+    display: flex;
+      font-size: 18px;
+      border-bottom: 1px solid blue;
+      border-left: 0px;
+      border-right: 0px;
+      width: 94%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      padding-top: 6px;
+      padding-bottom: 8px;
+      box-shadow: 0px -2px 5px rgb(245, 245, 248);
+}
+.menue li{
+    cursor: pointer;
+    list-style: none;
+    font-size: 17px;
+    padding: 0 10px;
+    background-color: black;
+    text-align: center;
+    border-bottom: 1px double blue;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 10px blue , 0px -1px 4px white;
+}
+.side .sochial{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    right: 30px; 
+    text-align: center;
+}
+.side .sochial i{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 3px 4px;
+     margin-bottom: 35px;
+     box-shadow: 3px 2px 4px rgb(103, 3, 242)  , -3px -2px 3px rgb(238, 4, 4) ;
+}
+
+#menue:checked ~ .side{
+    left: 0px;
+    bottom:70px;
+    z-index: 11;
+}
+.menue li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menue li:hover{
+     color: black;
+    background-color: white;
+    border-radius: 3px;
+}
+.menue label{
+ padding: 3px 5px 4px 0px;
+}
+.menue label:hover ,.nav label span:hover{
+    color: rgb(3, 121, 248);
+}
+.sochial i:hover{
+    transform: scale(1.3);
+}
+.main{
+    position: relative;
+    margin-left: 28px;
+    height: 700px;
+    background-color: blueviolet;
+}
+.main{
+    position: absolute;
+    top: 10px;
+}
+.iphone div img{
+    width: 100px;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px black;
+    transition: .3s ease-out;
+}
+.main .iphone , .cont , .buy ,.inf{
+    display: flex;
+    gap: 90px;
+    position: absolute;
+    bottom:400px;
+}
+.cont{
+    margin-left: 20px;
+    bottom: 380px;
+    gap: 135px;
+}
+.inf{
+    bottom: 350px;
+    text-align: center;
+    gap: 80px;
+}
+.inf span{
+    white-space: nowrap;
+        margin-right: 10px;
+}
+.buy{
+    bottom:300px ;
+    gap: 145px;
+    margin-left: 35px;
+}
+.buy a ,.buy2 a , .buy5 a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: .4s ease all;
+}
+.buy a:hover 
+,.buy2 a:hover 
+,.buy3 a:hover
+,.buy5 a:hover{
+    transform: scale(1.15) ;
+    transform: translate(-3px , 2px);
+}
+ .main .iphone img:hover 
+ ,.mac img:hover{
+    transform: scale(1.2);
+        box-shadow: -3px -4px 2px black;
+ }
+ .iphone2{
+    display: flex;
+    gap: 90px;
+    position: absolute;
+    bottom: 80px;
+ }
+ .iphone2 div img{
+    height: 100%;
+    width: 100px;
+    transform: scale(1.15);
+      border-radius: 10px;
+    box-shadow: 5px 5px 3px black;
+    transition: .3s ease-out;
+    border-top-left-radius: 2px solid black
+ }
+ .iphone2 div img:hover{
+    transform: scale(1.3);
+    box-shadow: -3px -4px 2px black;
+ }
+ .cont2{
+    display: flex;
+    gap: 142px;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 24px;
+    white-space: nowrap;
+ }
+.inf2{
+position: absolute;
+bottom: 0px;
+display: flex;
+gap: 88px;
+margin-left: 10px;
+white-space: nowrap;
+ }
+ .buy2{
+    display: flex;
+    gap: 155px;
+    margin-left: 28px;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -45px;
+ }
+ .mac{
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    border-color: blue;
+ }
+ .mac div img{
+    margin-top: 45px;
+    width: 200px;
+    height: 200px;
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+ }
+ .mac div img:hover{
+    transform: scale(1.12);
+    transform: translate(0px ,-8px);
+        box-shadow: -3px -4px 2px black ,0px 4px 2px black;
+ }
+ .cont3{
+    display: flex;
+    margin-left: 85px;
+    gap: 160px;
+    font-size: 17px;
+ }
+ .inf3 , .buy3{
+    display: flex;
+    gap: 145px;
+    white-space: nowrap;
+    margin-left: 80px;
+ }
+ .inf3 span{
+    margin-top: 10px;
+    font-size: 18px;
+ }
+ .buy3{
+    gap: 225px;
+    margin-top: 20px;
+    margin-left: 100px;
+ }
+ .buy3 a , .buy4 a{
+    padding: 3px 10px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease;
+ }
+ .smart{
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+ }
+.smart div img , .smart2 div img{
+    margin-top: 70px;
+    height: 150px;
+    width: 130px;
+    border-radius: 30px;
+    padding: 3px 5px;
+    box-shadow: -1px -1px 3px black;
+    transition: .3s ease-in-out;
+}
+.smart div img:hover 
+,.smart2 div img:hover{
+ transform: translate(0px,5px);
+  transform: scale(1.15);
+}
+.cont4{
+    margin-top: 25px;
+    display: flex;
+    gap: 90px;
+    margin-left: 50px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.buy4 , .buy5{
+    display: flex;
+    gap: 135px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.buy4 a:hover{
+transform: translate(1px , 4px);
+}
+.lab{
+  padding-top: 80px;
+}
+.watch{
+    padding-top: 60px;
+}
+.support ul{
+display: flex;
+gap: 60px;
+margin-left: 18%;
+margin-top: 150px;
+}
+.support ul li{
+    list-style: none;
+    font-size: 20px;
+}
+.support2{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    margin-left: 33%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.support .supp li a i{
+    border-radius: 60px;
+    padding: 5px 5px;
+    color: rgb(254, 252, 252);
+    background-color: blue;
+    transition: .2s ease-in-out;
+    animation: media 2s steps(20) infinite;
+}
+@keyframes media{
+    0%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(0px -12px);
+    }
+    50%{
+        transform: translate(0px , 12px);
+    }
+    75%{
+        transform: translate(0px , -12px);
+    }
+}
+.support .supp li a i:hover{
+    transform: scale(1.5);
+    background-color: white;
+    color: black;
+}
+.smart2{
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+}
+.cont5{
+    font-size: 18px;
+    margin-top: 30px;
+    display: flex;
+    gap: 89px;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+.copy{
+    margin-top: 20px;
+    margin-left: 40%;
+}
+ 
