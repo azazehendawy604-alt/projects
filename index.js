@@ -91,3 +91,19 @@ const cardd=new IntersectionObserver((ent)=>{
 card.forEach(card=>{
     cardd.observe(card)
 });
+// ----------------------------------------------------------------------
+const h2 =document.querySelectorAll('.nav h2 i');
+const options4={};
+const h2r=new IntersectionObserver((ent)=>{
+    ent.forEach(el=>{
+        el.target.classList.toggle('rotatei',el.isIntersecting)
+    })
+},options4);
+h2.forEach(h2=>{
+    h2r.observe(h2)
+});
+const li=document.querySelectorAll('.nav ul li a');
+li.onclick=function(){
+    li.style.backgroundColor='black';
+    li.style.color='#fff';
+}
