@@ -102,8 +102,4 @@ const h2r=new IntersectionObserver((ent)=>{
 h2.forEach(h2=>{
     h2r.observe(h2)
 });
-const li=document.querySelectorAll('.nav ul li a');
-li.onclick=function(){
-    li.style.backgroundColor='black';
-    li.style.color='#fff';
-}
+

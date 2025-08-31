@@ -198,7 +198,7 @@ form label{
 form input:hover{
     background-color: white;
     color: black;
-    box-shadow: -2px -3px 3px blue;
+    box-shadow: -2px -3px 2px blue;
 }
 .cont{
     margin-left: 40px;
