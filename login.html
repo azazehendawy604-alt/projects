@@ -8,28 +8,22 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <div class="log">
 <div class="parent">
   <div class="head">
     <h1>Login Form</h1>
   </div>
+ <fieldset>
+  <legend ><i style="transform: rotateZ(-90deg);" class="fa-solid fa-arrow-right-from-bracket"></i></legend>
   <form>
-    <div class="mail">
-    <i class="fa-sharp fa-solid fa-person"></i>
-    <input class="phone" type="text" placeholder="Email or Phone" required name="phoneoremail">
-    </div>
-    <div class="pass">
-      <i class="fa-solid fa-lock"></i>
-    <input class="passwor" type="password" placeholder="password" name="password" required>
-    </div>
-    <p style="margin-left: 160px;">Forget password?</p>
-    <button type="submit" class="log">Login</button>
+    <input type="email" placeholder="your email" required>
+    <input type="password" placeholder="password" required>
+    <button type="submit" >confirm</button>
   </form>
-  <div class="foot">
-    <p style="display: inline;">Not a member?</p>
-    <a href="##">Sigin now</a>
-
-  </div>
+ </fieldset>
 </div>
-
+  </div>
+<!-- <button class="bnt_show">show</button> -->
+<script src="login.js"></script>
 </body>
 </html>
